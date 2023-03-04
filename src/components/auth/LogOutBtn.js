@@ -12,7 +12,7 @@ export const LogOutBtn = () => {
     const history = useHistory()
 
     const logOut = async () => {
-        await axios.get("https://mern-stack-tutorial.vercel.app/logout")
+        await axios.get("http://localhost:5000/auth/logout")
         await getLoggedIn()
         history.push("/")
 

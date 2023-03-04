@@ -28,7 +28,7 @@ export const Login = () => {
                 password,
             }
 
-            await axios.post("https://mern-stack-tutorial.vercel.app/login", loginData)
+            await axios.post("http://localhost:5000/auth/login", loginData)
             await getLoggedIn()
             setLoginSuccess(true);
             setTimeout(() => {

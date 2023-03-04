@@ -28,7 +28,7 @@ export const Register = () => {
 
 
 
-            await axios.post("https://mern-stack-tutorial.vercel.app/auth/", registerData)
+            await axios.post("http://localhost:5000/auth/", registerData)
             getLoggedIn()
             history.push("/")
             window.alert("Registration successful!")
